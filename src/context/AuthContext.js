@@ -7,7 +7,7 @@ const AuthContextProvider= (props) => {
     const [Loogedin, setLoogedin] = useState(undefined);
 
     async function getLoogedIn(){
-        const loogedInRes = await axios.get('http://localhost:2000/api/v1/loogedin')
+        const loogedInRes = await axios.get('https://mern-login-sys.herokuapp.com/api/v1/loogedin')
         setLoogedin(loogedInRes.data)
     }
     useEffect(()=>{

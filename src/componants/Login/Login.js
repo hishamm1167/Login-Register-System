@@ -23,7 +23,7 @@ const Addform = () => {
                     password,
                 };
                 setisLiading(true)
-            await axios.post('http://localhost:2000/api/v1/login' , rejsterData )
+            await axios.post('https://mern-login-sys.herokuapp.com/api/v1/login' , rejsterData )
             setisLiading(false)
             setLoogedin(true)
             navegate('/customer')

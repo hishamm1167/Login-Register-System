@@ -13,7 +13,7 @@ const CustomerForm = ({allCus}) => {
                 name: name
             }
             setIsLoading(true)
-            await axios.post('http://localhost:2000/api/v1/customer' , customerData)
+            await axios.post('https://mern-login-sys.herokuapp.com/api/v1/customer' , customerData)
             allCus()
             setIsLoading(false)
             setName('')

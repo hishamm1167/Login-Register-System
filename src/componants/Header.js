@@ -30,7 +30,7 @@ const Header = () => {
                 >
                 {Loogedin && 
                     <Nav.Link onClick={async()=>{
-                        await axios.get('http://localhost:2000/api/v1/logout')
+                        await axios.get('https://mern-login-sys.herokuapp.com/api/v1/logout')
                         await setLoogedin()
                         navegate('/')
                     }} >Logout</Nav.Link>

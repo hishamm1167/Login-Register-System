@@ -6,7 +6,7 @@ const Customer = () => {
   const [custumers, setCustumers] = useState([]);
 
   const getAllnames =async ()=>{
-    const customersRef =  await axios.get('http://localhost:2000/api/v1/getallcustomers')
+    const customersRef =  await axios.get('https://mern-login-sys.herokuapp.com/api/v1/getallcustomers')
     setCustumers(customersRef.data)
   }
   useEffect(()=>{

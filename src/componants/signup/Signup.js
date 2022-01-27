@@ -29,7 +29,7 @@ const Signup = () => {
                     password
                 };
             setisLoading(true)
-            await axios.post('http://localhost:2000/api/v1/signup' , rejsterData )
+            await axios.post('https://mern-login-sys.herokuapp.com/api/v1/signup' , rejsterData )
             setisLoading(false);
             setLoogedin(true)
             navegate('/customer')
